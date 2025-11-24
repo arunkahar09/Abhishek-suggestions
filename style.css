@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a512a;
+    margin-right: 230px;
+    margin-left: -80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.donate-btn {
+    padding: 10px 20px;
+    background: #2a512a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url("https://images.unsplash.com/photo-1560264280-88b68371db39?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    margin-top: 80px;
+}
+
+.hero-text h1 {
+    font-size: 60px;
+    color: white;
+    max-width: 500px;
+}
+
+.hero-text p {
+    color: #eee;
+    font-size: 20px;
+    max-width: 450px;
+}
+
+.hero-btn {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background: #faaf40;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ABOUT */
+.about,
+.donate {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* PROGRAMS */
+.programs {
+    padding: 80px 50px;
+    text-align: center;
+    background: #f8f8f8;
+}
+
+.program-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.program-card {
+    width: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 20px;
+}
+
+.program-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.program-card h3 {
+    margin: 15px 0 5px;
+}
+
+.program-card p {
+    padding: 0 15px;
+    color: #555;
+}
+
+/* DONATE SECTION */
+.donate-main-btn {
+    padding: 14px 28px;
+    background: #2a512a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    background: #222;
+    padding: 20px;
+    color: #ccc;
+}
+
+.logo img {
+    height: 55px;
+    /* logo ka size */
+    width: auto;
+}
