@@ -1,0 +1,212 @@
+/* --- Google Fonts & Core Variables --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --primary-color: #2e7d32;   /* Eco Green */
+    --secondary-color: #f57c00; /* Warm Amber */
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-light: #f9fbf9;
+    --white: #ffffff;
+}
+
+/* --- Global Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1546445317-29f4545e9d53?q=80&w=1200&auto=format&fit=crop') no-repeat center center/cover;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* --- Main About Section --- */
+.about-container {
+    padding: 80px 10%;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.about-text h2 {
+    font-size: 2.3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.stats-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.stat-card {
+    background-color: var(--bg-light);
+    border-left: 4px solid var(--secondary-color);
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+
+.stat-card h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* --- Section Heading Reusable Utility --- */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+}
+
+.section-title .line {
+    width: 70px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* --- Mission & Vision Section --- */
+.mission-vision-section {
+    background-color: var(--bg-light);
+    padding: 80px 10%;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.mv-card {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.mv-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.mv-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* --- Services Section --- */
+.services-section {
+    padding: 80px 10%;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.service-item {
+    text-align: center;
+    padding: 20px;
+}
+
+.service-item i {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    background: #e8f5e9;
+    padding: 20px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.service-item h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 992px) {
+    .about-grid, .mv-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-container, .mission-vision-section, .services-section {
+        padding: 50px 5%;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}

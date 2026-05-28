@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cow Care Sanctuary</title>
+    <link rel="stylesheet" href="/css/about.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>About Our Sanctuary</h1>
+            <p>Giving a second life, love, and dignity to every cow in need.</p>
+        </div>
+    </header>
+
+    <!-- Main About Section -->
+    <section class="about-container">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="https://res.cloudinary.com/dxgaylapl/image/upload/v1779996723/Desi_Cow_Bull_pyeiil.jpg" alt="Happy cows in a green field">
+            </div>
+            <div class="about-text">
+                <h2>Who We Are</h2>
+                <p>Welcome to <strong>Surabhi Cow Care Sanctuary</strong>, a compassionate haven dedicated to the rescue, rehabilitation, and lifelong care of stray, abandoned, and old cows. For us, cow care is not just a duty—it is a sacred responsibility.</p>
+                <p>We believe every living being deserves to live free from suffering. Our sanctuary provides a permanent, stress-free home where injured or neglected cattle receive medical attention, nutritious fodder, and endless affection.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <h3>500+</h3>
+                        <p>Cows Rescued</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>24/7</h3>
+                        <p>Medical Care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission & Vision -->
+    <section class="mission-vision-section">
+        <div class="section-title">
+            <h2>Our Purpose</h2>
+            <div class="line"></div>
+        </div>
+        <div class="mv-grid">
+            <div class="mv-card">
+                <div class="icon-box"><i class="fa-solid fa-heart-pulse"></i></div>
+                <h3>Our Mission</h3>
+                <p>To rescue abandoned and distressed cattle, provide them with immediate veterinary care, and offer a sustainable, safe environment where they can live with absolute dignity.</p>
+            </div>
+            <div class="mv-card">
+                <div class="icon-box"><i class="fa-solid fa-eye"></i></div>
+                <h3>Our Vision</h3>
+                <p>To create a world where cows are no longer abandoned or mistreated, and to promote organic, cow-centric agriculture that benefits both humanity and nature.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Services/Features -->
+    <section class="services-section">
+        <div class="section-title">
+            <h2>What We Do</h2>
+            <div class="line"></div>
+        </div>
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fa-solid fa-truck-medical"></i>
+                <h4>Emergency Rescue</h4>
+                <p>Operating dedicated ambulances to rescue injured or accident-prone cows from streets.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-seedling"></i>
+                <h4>Nutritious Diet</h4>
+                <p>Providing freshly sourced green fodder, grains, and clean drinking water daily.</p>
+            </div>
+            <div class="service-item">
+                <i class="fa-solid fa-stethoscope"></i>
+                <h4>Medical Ward</h4>
+                <p>Equipped with resident veterinarians to handle routine health checks and surgeries.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        // Navbar fetch karein
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Footer fetch karein
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>
